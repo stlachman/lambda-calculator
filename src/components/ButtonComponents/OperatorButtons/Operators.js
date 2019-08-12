@@ -1,16 +1,18 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import { operators } from "../../../data";
 import OperatorButton from "./OperatorButton";
 
-//import any components needed
-
-//Import your array data to from the provided data file
+const OperatorWrap = styled.div`
+  grid-area: 1 / 4 / 4 / 5;
+  display: grid;
+`;
 
 const Operators = () => {
   // STEP 2 - add the imported data to state
   const [buttonOperators, setButtonOperators] = useState(operators);
   return (
-    <div>
+    <OperatorWrap>
       {buttonOperators &&
         buttonOperators.map(operator => (
           <OperatorButton
@@ -19,7 +21,7 @@ const Operators = () => {
             char={operator.char}
           />
         ))}
-    </div>
+    </OperatorWrap>
   );
 };
 

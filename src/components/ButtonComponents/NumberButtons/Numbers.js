@@ -1,20 +1,24 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import { numbers } from "../../../data";
 import NumberButton from "./NumberButton";
-//import any components needed
 
-//Import your array data to from the provided data file
+const NumberWrap = styled.div`
+  grid-area: 2 / 1 / 4 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+`;
 
 const Numbers = () => {
   const [buttonNumbers, setNumbers] = useState(numbers);
   // STEP 2 - add the imported data to state
   return (
-    <div>
+    <NumberWrap>
       {buttonNumbers &&
         buttonNumbers.map(number => (
           <NumberButton key={number} number={number} />
         ))}
-    </div>
+    </NumberWrap>
   );
 };
 export default Numbers;
