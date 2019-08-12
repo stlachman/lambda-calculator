@@ -1,16 +1,23 @@
 import React from "react";
-import Numbers from "../ButtonComponents/NumberButtons/Numbers";
-import Operators from "../ButtonComponents/OperatorButtons/Operators";
-import Specials from "../ButtonComponents/SpecialButtons/Specials";
+import styled from "styled-components";
 
-const Display = () => {
+const InputView = styled.div`
+  background: #2e282a;
+  border-radius: 35px;
+  padding: 20px;
+`;
+
+const InputText = styled.span`
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+`;
+
+const Display = props => {
   return (
-    <div>
-      {/* Display any props data here */}
-      <Specials />
-      <Operators />
-      <Numbers />
-    </div>
+    <InputView>
+      <InputText>{props.value}</InputText>
+    </InputView>
   );
 };
 
