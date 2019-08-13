@@ -11,7 +11,6 @@ const NumberWrap = styled.div`
 
 const Numbers = () => {
   const [buttonNumbers, setNumbers] = useState(numbers);
-  // STEP 2 - add the imported data to state
   return (
     <NumberWrap>
       {buttonNumbers &&

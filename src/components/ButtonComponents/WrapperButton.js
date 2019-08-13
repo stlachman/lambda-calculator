@@ -11,6 +11,7 @@ const Grid = styled.div`
   grid-template-rows: 1fr 1fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  margin: 20px 0 0 0;
 `;
 
 const WrapperButton = () => {
