@@ -4,9 +4,10 @@ import { specials } from "../../../data";
 import SpecialButton from "./SpecialButton";
 
 const SpecialWrap = styled.div`
-  grid-area: 1 / 1 / 2 / 4;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-around;
+  grid-area: specials;
+  margin-top: 12px;
 `;
 
 const Specials = () => {

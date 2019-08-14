@@ -4,9 +4,10 @@ import { numbers } from "../../../data";
 import NumberButton from "./NumberButton";
 
 const NumberWrap = styled.div`
-  grid-area: 2 / 1 / 4 / 4;
+  grid-area: number;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6px 0;
 `;
 
 const Numbers = () => {

@@ -23,6 +23,10 @@ const Button = styled.button`
 
 const LargeButton = styled(Button)`
   grid-column: 1 / 3;
+  max-width: 160px;
+  border-radius: 40px;
+  width: 100%;
+  height: 50px;
 `;
 
 const NumberButton = props => {

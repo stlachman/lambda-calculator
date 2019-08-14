@@ -4,7 +4,7 @@ import { operators } from "../../../data";
 import OperatorButton from "./OperatorButton";
 
 const OperatorWrap = styled.div`
-  grid-area: 1 / 4 / 4 / 5;
+  grid-area: operators;
   display: grid;
 `;
 
